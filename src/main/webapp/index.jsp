@@ -31,6 +31,9 @@
         if (action != null && action.equals("increment")) {
             // increment number
             counter = counter.intValue() + 1;
+            
+            //log increment 
+            System.out.println( "Incrementing Counter" );
 
             // update session
             session.setAttribute("demo.counter", counter);
